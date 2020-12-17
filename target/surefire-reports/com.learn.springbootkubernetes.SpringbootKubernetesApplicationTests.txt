@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: com.learn.springbootkubernetes.SpringbootKubernetesApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.862 s - in com.learn.springbootkubernetes.SpringbootKubernetesApplicationTests
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.64 s <<< FAILURE! - in com.learn.springbootkubernetes.SpringbootKubernetesApplicationTests
+contextLoads  Time elapsed: 0.02 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Invalid mapping on handler class [com.learn.springbootkubernetes.web.CalculadoraCreditoController]: public org.springframework.http.ResponseEntity com.learn.springbootkubernetes.web.CalculadoraCreditoController.obtenerCalculoCredito(com.learn.springbootkubernetes.dto.InfoCredito)
+Caused by: java.lang.IllegalStateException: Invalid mapping on handler class [com.learn.springbootkubernetes.web.CalculadoraCreditoController]: public org.springframework.http.ResponseEntity com.learn.springbootkubernetes.web.CalculadoraCreditoController.obtenerCalculoCredito(com.learn.springbootkubernetes.dto.InfoCredito)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'api.base.url' in value "${api.base.url}/calculo"
+
