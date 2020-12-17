@@ -9,4 +9,9 @@ public class Controller {
     public String index() {
         return "Hello Spring-Boot app successfully deployed and running on Minishift, hola";
     }
+    
+    @RequestMapping("/prueba")
+    public String prueba() {
+        return "prueba";
+    }
 }
