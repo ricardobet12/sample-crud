@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.calculadoraCreditoHipotecario.service.impl;
+package com.learn.springbootkubernetes.service.impl;
 
-import com.calculadoraCreditoHipotecario.dto.InfoCredito;
-import com.calculadoraCreditoHipotecario.dto.InfoResult;
-import com.calculadoraCreditoHipotecario.service.CalculadoraCreditoService;
+
+import com.learn.springbootkubernetes.dto.InfoCredito;
+import com.learn.springbootkubernetes.dto.InfoResult;
+import com.learn.springbootkubernetes.service.CalculadoraCreditoService;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Service;
