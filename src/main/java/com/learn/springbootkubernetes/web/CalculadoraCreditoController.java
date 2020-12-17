@@ -11,6 +11,7 @@ import com.calculadoraCreditoHipotecario.service.CalculadoraCreditoService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,10 +24,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("${api.base.url}/calculo")
 public class CalculadoraCreditoController {
-    
+
     @Autowired
     private CalculadoraCreditoService service;
-    
+
     @PostMapping("/obtenerCalculoCredito")
     public ResponseEntity<?> obtenerCalculoCredito(@RequestBody InfoCredito credito) {
         List<InfoResult> res = service.obtenerCalculoCredito(credito);
@@ -34,5 +35,15 @@ public class CalculadoraCreditoController {
             return ResponseEntity.noContent().build();
         }
         return ResponseEntity.ok(res);
+    }
+
+    @GetMapping("/prueba")
+    public String prueba() {
+        return ("Hello, SpringBoot on Wildfly");
+    }
+
+    @RequestMapping("/hello")
+    public String sayHello() {
+        return ("Hello, SpringBoot on Wildfly");
     }
 }
