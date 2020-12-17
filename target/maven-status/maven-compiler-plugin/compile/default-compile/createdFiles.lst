@@ -1,6 +1,2 @@
-com/calculadoraCreditoHipotecario/web/CalculadoraCreditoController.class
-com/calculadoraCreditoHipotecario/service/impl/CalculadoraCreditoServiceImpl.class
-com/calculadoraCreditoHipotecario/service/CalculadoraCreditoService.class
-com/calculadoraCreditoHipotecario/dto/InfoResult.class
+com/learn/springbootkubernetes/Controller.class
 com/learn/springbootkubernetes/SpringbootKubernetesApplication.class
-com/calculadoraCreditoHipotecario/dto/InfoCredito.class
