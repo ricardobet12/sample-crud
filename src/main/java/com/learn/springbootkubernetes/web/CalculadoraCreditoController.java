@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.calculadoraCreditoHipotecario.web;
+package com.learn.springbootkubernetes.web;
 
 import com.calculadoraCreditoHipotecario.dto.InfoCredito;
 import com.calculadoraCreditoHipotecario.dto.InfoResult;
