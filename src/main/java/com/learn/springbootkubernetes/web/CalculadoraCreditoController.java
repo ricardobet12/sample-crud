@@ -40,6 +40,6 @@ public class CalculadoraCreditoController {
     
     @GetMapping("/prueba")
     public String prueba() {
-        return "pruebapri";
+        return "prueba";
     }
 }
